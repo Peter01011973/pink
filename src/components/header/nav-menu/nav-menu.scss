@@ -1,0 +1,40 @@
+@import '../../global.scss';
+.menu {
+    margin: 0; 
+    padding: 0;
+    &__item {
+        font-family: $font;
+        font-size: 1.2rem;
+        display: inline-block;
+        margin-right: 15px;
+        position: relative;
+        &:hover {
+            color: red;
+            cursor: pointer;
+        }
+    }
+}
+
+.submenu {
+    &__items{
+        display: none;
+        position: absolute;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        top: 50;
+        width: 100px;
+        background: silver;
+    }
+    &__item {
+        padding: 5px;
+        margin: 5px;
+        &:hover {
+            background: pink;
+        }
+    }
+}
+
+.submenu:hover .submenu__items {
+    display: block;
+}

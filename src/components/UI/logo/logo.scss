@@ -1,0 +1,13 @@
+.logo {
+    display: block;
+    min-width: 90px;
+    &__title {
+        margin: 0;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 5px;
+    }
+}
+
