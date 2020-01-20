@@ -1,17 +1,12 @@
-.layout {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 100vh;
-}
-
 .footer {
+
     display: flex;
     flex-direction: row;
     height: 50px;
     width: 100%;
     background: pink;
-    margin-top: auto;
+    // flex: 0 0 auto;
+
     justify-content: center;
     align-items: center;
     &-copyright {

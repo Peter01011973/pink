@@ -1,1 +1,33 @@
-/* No CSS *//*# sourceMappingURL=layout.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.layout__header {
+  display: block;
+}
+
+.layout__main {
+  display: block;
+}
+
+.layout__footer {
+  margin-top: auto;
+}
+/*# sourceMappingURL=layout.css.map */

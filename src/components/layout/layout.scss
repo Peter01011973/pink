@@ -1,3 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+html, body {
+    height: 100%;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    &__header {display: block;}
+    &__main {display: block;}
+    &__footer {    margin-top: auto;}
+}
 
 

@@ -3,9 +3,10 @@ $background: pink;
 $font: Arial;
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: sticky; //
+    z-index: 99;
+    left: 0; 
+    top: 0; 
     height: 70px;
     width: 100%;
     background: $background;
