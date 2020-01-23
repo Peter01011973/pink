@@ -1,0 +1,46 @@
+$fontSize: 33px;
+$navButtonDivHeight: 120px;
+@mixin buttonDivAtribute() {
+    position: absolute;
+    height: $navButtonDivHeight;
+    width: 50px;
+    background: rgba(255,255,255,.2);
+    top: 40%;
+    // top: 50%;
+    text-align: center;
+    cursor: pointer;    
+    i {
+        color: white;
+        font-size: $fontSize;
+        padding-top: ($navButtonDivHeight - $fontSize)/2; 
+    }  
+}
+
+.slide {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: wheat;
+    &__prev {
+        left: 0;
+        @include buttonDivAtribute();
+    }
+    &__next {
+        right: 0;
+        @include buttonDivAtribute();  
+    }
+}
+
+.slide.current {
+    opacity: 1;
+}

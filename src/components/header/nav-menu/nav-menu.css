@@ -45,4 +45,8 @@
 .submenu:hover .submenu__items {
   display: block;
 }
+
+.active {
+  color: red;
+}
 /*# sourceMappingURL=nav-menu.css.map */

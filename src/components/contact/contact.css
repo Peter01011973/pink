@@ -1,0 +1,56 @@
+.contact {
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5%;
+}
+
+.slick-next:before, .slick-prev:before {
+  color: black;
+}
+
+.slick-slider * {
+  outline: none;
+}
+
+.customerRating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.customerRating__customerRef {
+  color: #040E27;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
+.customerRating img {
+  margin-bottom: 15px;
+  margin: auto;
+}
+
+.rating {
+  text-align: center;
+}
+
+.rating__name {
+  color: black;
+}
+
+.starIcon {
+  color: gold;
+}
+/*# sourceMappingURL=contact.css.map */

@@ -1,3 +1,9 @@
 .about {
-    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // width: 100%;
+    // position: relative;
+    overflow: hidden;
+    height: calc(100vh - 120px);
 }

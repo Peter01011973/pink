@@ -1,14 +1,14 @@
 import React from 'react';
 import './nav-menu.css';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 const Navmenu = () => {
     
     return (
             <ul className='menu'>
-                <li className='menu__item'><Link className = 'menu__link' to = '/'>Home</Link></li>
-                <li className='menu__item'><Link className = 'menu__link' to = '/about'>About</Link></li>
-                <li className='menu__item submenu'><Link className = 'menu__link' to = '/topics'>Topics</Link>
+                <li className='menu__item'><NavLink exact className = 'menu__link' to = '/' activeClassName = 'active'>Home</NavLink></li>
+                <li className='menu__item'><NavLink className = 'menu__link' to = '/about' activeClassName = 'active'>About</NavLink></li>
+                <li className='menu__item submenu'><NavLink className = 'menu__link' to = '/topics' activeClassName = 'active'>Topics</NavLink>
                     {/* <ul className="submenu__items">
                         <li className = 'submenu__item'><Link to = {`${match.url}/topic1`}>Topic 1</Link></li>
                         <li className = 'submenu__item'><Link to = {`${match.url}/topic2`}>Topic 2</Link></li>
@@ -20,7 +20,7 @@ const Navmenu = () => {
                         <li className = 'submenu__item'><a>Topic 3</a></li>
                     </ul> */}
                 </li>
-                <li className='menu__item'><Link className = 'menu__link' to = '/contact'>Contact</Link></li>
+                <li className='menu__item'><NavLink className = 'menu__link' to = '/contact' activeClassName = 'active'>Contact</NavLink></li>
             </ul>
     )
 }

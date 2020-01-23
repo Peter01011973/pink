@@ -1,16 +1,19 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 html, body {
+    box-sizing: border-box;
     height: 100%;
+    width: 100%;
 }
 
 .layout {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    // width: 100%;
     min-height: 100vh;
     &__header {display: block;}
     &__main {display: block;}

@@ -92,16 +92,16 @@ $font: Arial;
     }
 }
 
-@media (max-width: 1070px ) {
+@media screen and (max-width: 1070px ) {
     .header {
-        &-container__social-links, &-container__search, &-container__space {
+        .container__social-links, .container__search, .container__space {
             display: none;
         }
 
-        &-container{
+        .container{
             justify-content: space-between;
         }
-        &-container__nav{
+        .container__nav{
             flex-basis: 80%;
         }
     }

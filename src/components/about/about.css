@@ -1,6 +1,9 @@
 .about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  height: calc(100vh - 120px);
 }
 /*# sourceMappingURL=about.css.map */

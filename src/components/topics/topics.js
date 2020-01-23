@@ -1,9 +1,14 @@
 import React from 'react'
-import { useRouteMatch, Link, Switch, Route, useParams, Redirect } from 'react-router-dom';
+import { useRouteMatch, Link, Switch, Route, useParams } from 'react-router-dom';
 
-const Topics = () => {
+const Topics = (props) => {
     let {url, path} = useRouteMatch();
-    // console.log(match);
+    let params = useParams();
+    console.log('params ', params);
+    let match = useRouteMatch('/topics/components');
+    console.log('useRouteMatch', match);
+    console.log('props', props);
+    
     
     return (
         <div>
@@ -12,9 +17,11 @@ const Topics = () => {
                 <li><Link to = {`${url}/components`}>Components</Link></li>
                 <li><Link to = {`${url}/functions`}>Functions</Link></li>
             </ul>
+
             <Switch>
                 <Route path = {`${path}/:topicId`}><Topic /></Route>
                 <Route path = {path}><h3>Please select topic</h3></Route>
+                <Route ><h1>not found</h1></Route>
             </Switch>
         </div>
     )
@@ -24,7 +31,8 @@ export default Topics;
 
 const Topic = () => {
     let {topicId} = useParams();
-    // console.log(topicId);
+    let params = useParams();
+    console.log('params topicId',params);
     
 return (
     <div>

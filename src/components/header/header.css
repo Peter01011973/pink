@@ -118,16 +118,16 @@
   border-radius: 7px;
 }
 
-@media (max-width: 1070px) {
-  .header-container__social-links, .header-container__search, .header-container__space {
+@media screen and (max-width: 1070px) {
+  .header .container__social-links, .header .container__search, .header .container__space {
     display: none;
   }
-  .header-container {
+  .header .container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .header-container__nav {
+  .header .container__nav {
     -ms-flex-preferred-size: 80%;
         flex-basis: 80%;
   }
