@@ -7,7 +7,7 @@ import About from './components/about/about';
 import Contact from './components/contact/contact';
 import Topics from './components/topics/topics';
 
-const App = () => {
+const App = () => { 
   let {id} = useParams();
   console.log(id);
   
