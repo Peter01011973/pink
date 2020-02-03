@@ -8,7 +8,7 @@ import Contact from './components/contact/contact';
 import Topics from './components/topics/topics';
 import Fetching from './components/Fetching/Fetching';
 
-const App = () => {
+const App = () => { 
   let {id} = useParams();
   console.log(id);
   
