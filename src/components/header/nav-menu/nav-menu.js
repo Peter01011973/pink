@@ -21,6 +21,7 @@ const Navmenu = () => {
                     </ul> */}
                 </li>
                 <li className='menu__item'><NavLink className = 'menu__link' to = '/contact' activeClassName = 'active'>Contact</NavLink></li>
+                <li className='menu__item'><NavLink className = 'menu__link' to = '/fetch' activeClassName = 'active'>Fetching</NavLink></li>
             </ul>
     )
 }

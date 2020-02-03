@@ -6,6 +6,7 @@ import Home from './components/home/home';
 import About from './components/about/about';
 import Contact from './components/contact/contact';
 import Topics from './components/topics/topics';
+import Fetching from './components/Fetching/Fetching';
 
 const App = () => {
   let {id} = useParams();
@@ -18,6 +19,7 @@ const App = () => {
         <Route path = '/about' component = {About}/>
         <Route path = '/topics' component = {Topics}/>
         <Route path = '/contact' component = {Contact}/>
+        <Route path = '/fetch' component = {Fetching}/>
       </Switch>
     </Layout>
   );
