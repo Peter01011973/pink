@@ -76,7 +76,7 @@
   margin-right: 20px;
 }
 
-.socialLink__list {
+.social-link__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,11 +86,11 @@
   list-style: none;
 }
 
-.socialLink__item {
+.social-link__item {
   margin-right: 20px;
 }
 
-.socialLink__link {
+.social-link__link {
   display: block;
   width: 2rem;
   height: 2rem;
@@ -132,4 +132,3 @@
         flex-basis: 80%;
   }
 }
-/*# sourceMappingURL=header.css.map */

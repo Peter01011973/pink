@@ -10,17 +10,17 @@ const Header = () => {
                 <div className='container__logo'>
                     <Logo />
                 </div>
-                <nav className='container__nav'>
-                        <Navmenu/>
-                </nav>
-                <nav className='socialLink container__social-links'>
-                    <ul className='socialLink__list'>
-                        <li className='socialLink__item'><a className='socialLink__link' href="#"><i className="fa fa-instagram"></i></a></li>
-                        <li className='socialLink__item'><a className='socialLink__link' href="#"><i className="fa fa-twitter"></i></a></li>
-                        <li className='socialLink__item'><a className='socialLink__link' href="#"><i className="fa fa-facebook"></i></a></li>
-                        <li className='socialLink__item'><a className='socialLink__link' href="#"><i className="fa fa-google-plus"></i></a></li>
+                <div className='container__nav'>
+                    <Navmenu/>
+                </div>
+                <div className='social-link container__social-links'>
+                    <ul className='social-link__list'>
+                        <li className='social-link__item'><a className='social-link__link' href="#"><i className="fa fa-instagram"></i></a></li>
+                        <li className='social-link__item'><a className='social-link__link' href="#"><i className="fa fa-twitter"></i></a></li>
+                        <li className='social-link__item'><a className='social-link__link' href="#"><i className="fa fa-facebook"></i></a></li>
+                        <li className='social-link__item'><a className='social-link__link' href="#"><i className="fa fa-google-plus"></i></a></li>
                     </ul>
-                </nav>
+                </div>
                 <form className='search container__search'>
                     <input className = 'search__input' placeholder='searching...' />
                     <button className = 'search__button' >search</button>

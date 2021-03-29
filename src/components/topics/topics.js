@@ -1,5 +1,5 @@
 import React from 'react'
-import { useRouteMatch, Link, Switch, Route, useParams } from 'react-router-dom';
+import { useRouteMatch, Switch, Route, useParams } from 'react-router-dom';
 
 const Topics = (props) => {
     let {url, path} = useRouteMatch();
@@ -13,11 +13,6 @@ const Topics = (props) => {
     return (
         <div>
             <h3>Topics</h3>
-            <ul>
-                <li><Link to = {`${url}/components`}>Components</Link></li>
-                <li><Link to = {`${url}/functions`}>Functions</Link></li>
-            </ul>
-
             <Switch>
                 <Route path = {`${path}/:topicId`}><Topic /></Route>
                 <Route path = {path}><h3>Please select topic</h3></Route>

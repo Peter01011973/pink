@@ -6,4 +6,8 @@
   overflow: hidden;
   height: calc(100vh - 120px);
 }
-/*# sourceMappingURL=about.css.map */
+
+.about img {
+  width: 100%;
+  height: 100vh;
+}

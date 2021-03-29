@@ -13,11 +13,16 @@ html, body {
 .layout {
     display: flex;
     flex-direction: column;
-    // width: 100%;
     min-height: 100vh;
-    &__header {display: block;}
-    &__main {display: block;}
-    &__footer {    margin-top: auto;}
+    &__header {
+        display: block;
+    }
+    &__main {
+        flex: 1 1 auto;
+    }
+    &__footer { 
+        margin-top: auto;
+    }
 }
 
 
